@@ -1,21 +1,4 @@
-# simple_doc
-
-Simple autodocumentation for Struct and Classes.
-
-## Installation
-
-1. Add the dependency to your `shard.yml`:
-```yaml
-dependencies:
-  simple_doc:
-    github: kostya/simple_doc
-```
-2. Run `shards install`
-
-## Usage
-
-```crystal
-require "simple_doc"
+require "./src/simple_doc"
 
 class A
   include SimpleDoc
@@ -43,4 +26,4 @@ puts A.document_type.to_printable_root
 #    a: Int32
 #    c: Float64?
 #    b: String("bla") # comment
-```
+

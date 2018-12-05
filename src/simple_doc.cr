@@ -1,13 +1,12 @@
 module SimpleDoc
   VERSION = "0.1.0"
 
-  annotation Field # Options
-    #   :ignore
-    #   :type_name
-    #   :comment
+  # Options
+  #   :ignore
+  #   :type_name
+  #   :comment
 
-
-  end
+  annotation Field; end
 
   macro included
     extend ClassExt
