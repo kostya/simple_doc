@@ -4,10 +4,10 @@ class A
   include SimpleDoc
 
   property a : Int32
-  
+
   @[SimpleDoc::Field(comment: "comment")]
   property b = "bla"
-  
+
   property c : Float64?
 
   @[SimpleDoc::Field(ignore: true)]
@@ -26,4 +26,3 @@ puts A.document_type.to_printable_root
 #    a: Int32
 #    c: Float64?
 #    b: String("bla") # comment
-
